@@ -31,34 +31,54 @@ print()
 
 print("*******№2******")
 print()
-# w_1 = "class"
-# w_2 = "function"
-# w_3 = "method"
 
-bw_1 = eval('b"class"')
-print(type(bw_1), f'content: {bw_1}')
-bw_2 = eval('b"function"')
-print(type(bw_2), f'content: {bw_2}')
-bw_3 = eval('b"method"')
-print(type(bw_3), f'content: {bw_3}')
+
+def b_converter(some_arr):
+    for w in some_arr:
+        bw = eval(f'b"{w}"')
+        print(type(bw), f'content: {bw}, length: {len(bw)}')
+    return ''
+
+
+if __name__ == '__main__':
+    w_1 = "class"
+    w_2 = "function"
+    w_3 = "method"
+
+    w_arr = [_ for _ in (w_1, w_2, w_3)]
+
+    b_converter(w_arr)
+
 print()
+
 
 # 3. Определить, какие из слов, поданных на вход программы, невозможно записать в байтовом типе.
 # Для проверки правильности работы кода используйте значения:
 # «attribute», «класс», «функция», «type»
 
 
-print("*******№3******")
-print()
-w1_bytes = b"attribute"
-# w2_bytes = b"класс" # ошибка: "SyntaxError: bytes can only contain ASCII literal characters."
-# w3_bytes = b"функция"  # ошибка: "SyntaxError: bytes can only contain ASCII literal characters."
-w4_bytes = b"type"
+def check_byte_type(data_arr):
+    for w in data_arr:
+        if w.isascii():
+            bw = eval(f'b"{w}"')
+            print(type(bw), bw)
+        else:
+            print(f'"{w}" is not ASCII! bytes can only contain ASCII literal characters')
+    return ''
 
-print(w1_bytes)
-# print(w2_bytes)
-# print(w3_bytes)
-print(w4_bytes)
+
+if __name__ == '__main__':
+    print("*******№3******")
+    print()
+    w1 = "attribute"
+    w2 = "класс"
+    w3 = "функция"
+    w4 = "type"
+
+    w_arr = [_ for _ in (w1, w2, w3, w4)]
+
+    check_byte_type(w_arr)
+
 print()
 
 # 4. Преобразовать слова «разработка», «администрирование», «protocol», «standard»
@@ -69,51 +89,52 @@ print()
 print("*******№4******")
 
 
-def convert_str_to_bytes(some_str):
-    if type(some_str) != str:
-        print(f"{some_str} is not a string")
-        return ""
-
-    return some_str.encode("utf-8")
-
-
-def convert_bytes_to_str(some_byte_data):
-    if type(some_byte_data) != bytes:
-        print(f"{some_byte_data} is not a byte data")
-        return ""
-
-    return some_byte_data.decode("utf-8")
+def convert_str_to_bytes(some_str_arr):
+    byte_arr = []
+    for some_str in some_str_arr:
+        if type(some_str) != str:
+            print(f"{some_str} is not a string")
+        else:
+            byte_arr.append(some_str.encode("utf-8"))
+    return byte_arr
 
 
-str_data_1 = "разработка"
-str_data_2 = "администрирование"
-str_data_3 = "protocol"
-str_data_4 = "standard"
+def convert_bytes_to_str(some_byte_arr):
+    str_arr = []
+    for some_byte in some_byte_arr:
+        if type(some_byte) != bytes:
+            print(f"{some_byte} is not bytes class")
+        else:
+            str_arr.append(some_byte.decode("utf-8"))
+    return str_arr
 
-byte_data_1 = convert_str_to_bytes(str_data_1)
-print(byte_data_1)
-print()
-byte_data_2 = convert_str_to_bytes(str_data_2)
-print(byte_data_2)
-print()
-byte_data_3 = convert_str_to_bytes(str_data_3)
-print(byte_data_3)
-print()
-byte_data_4 = convert_str_to_bytes(str_data_4)
-print(byte_data_4)
-print()
-byte_data_5 = convert_str_to_bytes(478)
-print(byte_data_5)
-print("--------------")
-print(convert_bytes_to_str(byte_data_1))
-print()
-print(convert_bytes_to_str(byte_data_2))
-print()
-print(convert_bytes_to_str(byte_data_3))
-print()
-print(convert_bytes_to_str(byte_data_4))
-print()
-print(convert_bytes_to_str("gydgvydgsy"))
+
+if __name__ == '__main__':
+
+    data_1 = "разработка"
+    data_2 = "администрирование"
+    data_3 = "protocol"
+    data_4 = "standard"
+    data_5 = 733
+
+    data_list = [_ for _ in (data_1, data_2, data_3, data_4, data_5)]
+
+    bytes_arr = convert_str_to_bytes(data_list)
+    for b in bytes_arr:
+        print(b)
+
+    print("--------------")
+
+    bytes_arr.append("dfudcdfu")
+
+    str_list = convert_bytes_to_str(bytes_arr)
+    for s in str_list:
+        print(s)
+
+    print()
+
+    #
+    # print(convert_bytes_to_str("gydgvydgsy"))
 print()
 
 # 5. Выполнить пинг веб-ресурсов yandex.ru, youtube.com и преобразовать результаты
@@ -139,13 +160,14 @@ def do_server_pinged(some_url):
     return ""
 
 
-print("*******№5******")
-print()
-web_source_1 = 'yandex.ru'
-web_source_2 = 'youtube.com'
-do_server_pinged(7)
-do_server_pinged(web_source_1)
-do_server_pinged(web_source_2)
+if __name__ == '__main__':
+    print("*******№5******")
+    print()
+    web_source_1 = 'yandex.ru'
+    web_source_2 = 'youtube.com'
+    do_server_pinged(7)
+    do_server_pinged(web_source_1)
+    do_server_pinged(web_source_2)
 
 # 6. Создать текстовый файл test_file.txt, заполнить его тремя строками:
 # «сетевое программирование», «сокет», «декоратор». Проверить кодировку созданного файла
@@ -156,7 +178,6 @@ do_server_pinged(web_source_2)
 
 
 from chardet import detect
-
 
 print("*******№6******")
 print()
@@ -183,3 +204,4 @@ with open(file_name, "r", encoding=file_encoding) as test_file:
     print("", *file_content)
     # for line in r:
     #     print(line)
+
