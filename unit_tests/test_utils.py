@@ -61,7 +61,7 @@ class TestUtils(unittest.TestCase):
         ERROR: 'Bad Request'
     }
 
-    def test_send_message(self):
+    def test_send_correct_message(self):
         """
         Тестируем коооректность работы функции отправки,
         создаем тестовый сокет
@@ -75,7 +75,7 @@ class TestUtils(unittest.TestCase):
         # сравниваем результат проверенного кодирования и результат тестируемой функции
         self.assertEqual(test_socket.encoded_message, test_socket.received_message)
 
-    def test_send_wrong_dict(self):
+    def test_send_wrong_message(self):
         """
         проверяем корректность отправки словаря
         :return:
@@ -85,7 +85,7 @@ class TestUtils(unittest.TestCase):
         # проверка генерации исключения: если на входе не словарь
         self.assertRaises(TypeError, send_message, test_socket, 'wrong_dictionary')
 
-    def test_get_message(self):
+    def test_get_correct_message(self):
         """
         тест функции приема сообщений
         :return:
@@ -94,14 +94,14 @@ class TestUtils(unittest.TestCase):
         # тест корректной расшифровки корректного словаря
         self.assertEqual(get_message(test_sock_ok), self.test_dict_recv_ok)
 
-    def test_get_wrong_dict(self):
+    def test_get_wrong_message(self):
         """
         тест проверки корректности входящего словаря
         :return:
         """
         test_sock_err = TestSocket(self.test_dict_recv_err)
         # тест корректной расшифровки некорректного словаря
-        self.assertRaises(get_message(test_sock_err), self.test_dict_recv_err)
+        self.assertEqual(get_message(test_sock_err), self.test_dict_recv_err)
 
 
 if __name__ == '__main__':

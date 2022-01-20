@@ -12,7 +12,6 @@ from client import create_presence, process_answer
 class TestClass(unittest.TestCase):
     """
     класс тестов
-
     """
 
     def test_def_presence(self):
@@ -25,15 +24,15 @@ class TestClass(unittest.TestCase):
 
     def test_200_ans(self):
         """ тест корректного разбора ответа 200 """
-        self.assertEqual(process_answer({RESPONSE: 200}), '200: ОК')
+        self.assertEqual(process_answer({RESPONSE: 200}), '200 : OK')
 
     def test_400_ans(self):
         """ тест корректного разбора ответа 400 """
-        self.assertEqual(process_answer({RESPONSE: 400, ERROR: 'Bad Request'}), '400: Bad Request')
+        self.assertEqual(process_answer({RESPONSE: 400, ERROR: 'Bad Request'}), '400 : Bad Request')
 
     def test_no_response(self):
         """ тест исключения без поля RESPONSE """
-        self.assertEqual(ValueError, process_answer, {ERROR: 'Bad Request'})
+        self.assertRaises(ValueError, process_answer, {ERROR: 'Bad Request'})
 
 
 if __name__ == '__main__':
