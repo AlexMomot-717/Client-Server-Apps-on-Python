@@ -4,6 +4,12 @@ from socket import *
 from sys import argv, exit
 from common.utils import *
 from common.variables import *
+import logging
+import log.server_log_config
+
+
+# получаем уже созданный логгер
+logger = logging.getLogger('app.server')
 
 
 def process_client_message(message):
@@ -16,7 +22,9 @@ def process_client_message(message):
 
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
             and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
+        logger.debug('Получено корректное сообщение от Клиента и сформирован ответ "200"')
         return {RESPONSE: 200}
+    logger.debug('Получено некорректное сообщение от Клиента и сформирован ответ "400"')
     return {
         RESPONSE: 400,
         ERROR: 'Bad Request'
@@ -41,11 +49,11 @@ def main():
         if listen_port < 1024 or listen_port > 65535:
             raise ValueError
     except IndexError:
-        print('После параметра -\'p\' необходимо указать номер порта')
+        logger.error('После параметра -\'p\' необходимо указать номер порта')
         exit(1)
 
     except ValueError:
-        print('В качестве порта может быть только число в \n'
+        logger.error('В качестве порта может быть только число в \n'
               'диапазоне от 1024 до 65535')
         exit(1)
 
@@ -56,28 +64,31 @@ def main():
         else:
             listen_address = ''
     except IndexError:
-        print('После параметра -\'a\' необходимо указать адрес, который будет слушать сервер')
+        logger.error('После параметра -\'a\' необходимо указать адрес, который будет слушать сервер')
         exit(1)
 
     # Формируем сокет:
-
+    logger.debug('Создаем сокет')
     transport = socket(AF_INET, SOCK_STREAM)
     transport.bind((listen_address, listen_port))
 
     # Слушаем порт:
-
+    logger.debug('Слушаем порт')
     transport.listen(MAX_CONNECTIONS)
 
     while True:
         client, address = transport.accept()
+        logger.debug('Принимается запрос на присутствие Клиента')
         try:
+            logger.debug('Получаем сообщение от Клиента')
             message_from_client = get_message(client)
             print(message_from_client)
             response = process_client_message(message_from_client)
             send_message(client, response)
+            logger.debug('Отправлен ответ Клиенту')
             client.close()
         except (ValueError, json.JSONDecodeError):
-            print('От клиента получено некорректое сообщение! ')
+            logger.error('От Клиента получено некорректое сообщение!')
             client.close()
 
 

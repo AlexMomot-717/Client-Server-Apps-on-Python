@@ -13,6 +13,13 @@ class TestClass(unittest.TestCase):
     """
     класс тестов
     """
+    def setUp(self):
+        """ настройка тестов """
+        pass
+
+    def tearDown(self):
+        """ завершающее удаление настроек """
+        pass
 
     def test_def_presence(self):
         """ тест корректного запроса """
@@ -33,6 +40,7 @@ class TestClass(unittest.TestCase):
     def test_no_response(self):
         """ тест исключения без поля RESPONSE """
         self.assertRaises(ValueError, process_answer, {ERROR: 'Bad Request'})
+
 
 
 if __name__ == '__main__':

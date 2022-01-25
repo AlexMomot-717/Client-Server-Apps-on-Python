@@ -7,6 +7,12 @@ from common.utils import *
 from common.variables import *
 from time import time
 import json
+import logging
+import log.client_log_config
+
+
+# получаем уже созданный логгер
+logger = logging.getLogger('app.client')
 
 
 def create_presence(account_name='Guest'):
@@ -22,6 +28,7 @@ def create_presence(account_name='Guest'):
             ACCOUNT_NAME: account_name
         }
     }
+    logger.debug('Сформирован запрос на присутствие Клиента')
     return out
 
 
@@ -34,7 +41,9 @@ def process_answer(message):
 
     if RESPONSE in message:
         if message[RESPONSE] == 200:
+            logger.debug('От Сервера получен ответ "200"  на запрос присутствия Клиента')
             return '200 : OK'
+        logger.debug('Получен ответ "400"  на запрос присутствия Клиента')
         return f'400 : {message[ERROR]}'
     raise ValueError
 
@@ -51,21 +60,24 @@ def main():
         server_port = DEFAULT_PORT
 
     except ValueError:
-        print('В качестве порта может быть только число в \n'
-              'диапазоне от 1024 до 65535')
+        logger.error('В качестве порта может быть только число в диапазоне от 1024 до 65535')
         exit(1)
 
     # Инициализация сокета и обмен
+    logger.debug('Создаем сокет')
 
     transport = socket(AF_INET, SOCK_STREAM)
     transport.connect((server_address, server_port))
+
     message_to_server = create_presence()
     send_message(transport, message_to_server)
+    logger.debug('Отправлен запрос Серверу')
     try:
+        logger.debug('Получаем ответ от Сервера')
         answer = process_answer(get_message(transport))
         print(answer)
     except (ValueError, json.JSONDecodeError):
-        print('Не удалось декодировать сообщение сервера')
+        logger.error('Не удалось декодировать сообщение сервера')
 
     finally:
         transport.close()

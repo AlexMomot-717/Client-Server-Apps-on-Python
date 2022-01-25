@@ -1,9 +1,9 @@
 """Unit-тесты утилит"""
 
+import json
 import os
 import sys
 import unittest
-import json
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
 from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, ENCODING
@@ -48,6 +48,7 @@ class TestUtils(unittest.TestCase):
     """
     Тестовый класс, выполняющий тестирование
     """
+
     test_dict_send = {
         ACTION: PRESENCE,
         TIME: 111111.111111,
@@ -60,6 +61,14 @@ class TestUtils(unittest.TestCase):
         RESPONSE: 400,
         ERROR: 'Bad Request'
     }
+
+    def setUp(self):
+        """ настройка тестов """
+        pass
+
+    def tearDown(self):
+        """ завершающее удаление настроек """
+        pass
 
     def test_send_correct_message(self):
         """
@@ -106,6 +115,3 @@ class TestUtils(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-

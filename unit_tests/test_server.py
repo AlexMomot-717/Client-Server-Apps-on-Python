@@ -19,6 +19,15 @@ class TestServer(unittest.TestCase):
     }
     ok_dict = {RESPONSE: 200}
 
+    def setUp(self):
+        """ настройка тестов """
+        pass
+
+    def tearDown(self):
+        """ завершающее удаление настроек """
+        pass
+
+
     def test_ok_check(self):
         """ тест корректного запроса"""
         self.assertEqual(process_client_message(
