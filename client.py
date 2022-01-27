@@ -9,12 +9,14 @@ from time import time
 import json
 import logging
 import log.client_log_config
+from deco_client import log
 
 
 # получаем уже созданный логгер
 logger = logging.getLogger('app.client')
 
 
+@log
 def create_presence(account_name='Guest'):
     """
     Формируется запрос присутствия клиента
@@ -32,6 +34,7 @@ def create_presence(account_name='Guest'):
     return out
 
 
+@log
 def process_answer(message):
     """
     Функция читает ответ сервера

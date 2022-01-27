@@ -6,12 +6,14 @@ from common.utils import *
 from common.variables import *
 import logging
 import log.server_log_config
+from deco_server import log
 
 
 # получаем уже созданный логгер
 logger = logging.getLogger('app.server')
 
 
+@log
 def process_client_message(message):
     """
     Функция принимает сообщения клиента в виде словаря,
