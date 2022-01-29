@@ -1,5 +1,4 @@
-# Программа клиента
-
+"""Программа-клиент"""
 
 import sys
 import json
@@ -7,15 +6,14 @@ import socket
 import time
 import argparse
 import logging
+import log.client_log_config
 from common.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS, \
     ACTION, TIME, USER, ACCOUNT_NAME, SENDER, PRESENCE, RESPONSE, ERROR, MESSAGE, MESSAGE_TEXT
 from common.utils import get_message, send_message
 from errors import ReqFieldMissingError, ServerError
-import log.client_log_config
 from deco_client import log
 
-
-# получаем уже созданный логгер
+# Инициализация клиентского логера
 logger = logging.getLogger('app.client')
 
 
@@ -55,11 +53,7 @@ def create_message(sock, account_name='Guest'):
 
 @log
 def create_presence(account_name='Guest'):
-    """
-    Формируется запрос присутствия клиента
-    :param account_name:
-    :return:
-    """
+    """Функция генерирует запрос о присутствии клиента"""
     out = {
         ACTION: PRESENCE,
         TIME: time.time(),
@@ -67,7 +61,7 @@ def create_presence(account_name='Guest'):
             ACCOUNT_NAME: account_name
         }
     }
-    logger.debug(f'Сформировано {PRESENCE}-сообщение для пользователя {account_name}')
+    logger.debug(f'Сформировано {PRESENCE} сообщение для пользователя {account_name}')
     return out
 
 
@@ -94,7 +88,7 @@ def arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
-    parser.add_argument('-m', '--mode', default='listen', nargs='?')
+    parser.add_argument('-m', '--mode', default='send', nargs='?')
     namespace = parser.parse_args(sys.argv[1:])
     server_address = namespace.addr
     server_port = namespace.port

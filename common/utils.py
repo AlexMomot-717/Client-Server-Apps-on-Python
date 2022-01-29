@@ -1,9 +1,15 @@
 """ Функции для использования обоими сторонами: сервера и клиента"""
 
 import json
-from common.variables import *
+import sys
+from common.variables import MAX_PACKAGE_LENGTH, ENCODING
+from errors import IncorrectDataRecivedError, NonDictInputError
+from deco_server import log
+from deco_client import log
+sys.path.append('../')
 
 
+@log
 def get_message(client):
     """
     Утилита для приема в байтах и декодирования
@@ -18,10 +24,11 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        raise ValueError
-    raise ValueError
+        raise IncorrectDataRecivedError
+    raise IncorrectDataRecivedError
 
 
+@log
 def send_message(sock, message):
     """
     Утилита для кодирования и отправки
@@ -32,7 +39,7 @@ def send_message(sock, message):
     """
 
     if not isinstance(message, dict):
-        raise TypeError
+        raise NonDictInputError
     js_message = json.dumps(message)
     encoded_message = js_message.encode(ENCODING)
     sock.send(encoded_message)
