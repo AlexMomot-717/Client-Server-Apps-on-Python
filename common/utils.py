@@ -6,7 +6,7 @@ from common.variables import MAX_PACKAGE_LENGTH, ENCODING
 from errors import IncorrectDataRecivedError, NonDictInputError
 from deco_server import log
 from deco_client import log
-sys.path.append('../')
+# sys.path.append('../')
 
 
 @log
@@ -24,8 +24,10 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
+        else:
+            raise IncorrectDataRecivedError
+    else:
         raise IncorrectDataRecivedError
-    raise IncorrectDataRecivedError
 
 
 @log
