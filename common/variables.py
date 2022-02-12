@@ -1,26 +1,19 @@
-"""Константы"""
-
 import logging
 
-# default порт для сетевой коммуникации:
+# Порт поумолчанию для сетевого ваимодействия
 DEFAULT_PORT = 7777
-
-# default IP-адрес для соединения с клиентом:
+# IP адрес по умолчанию для подключения клиента
 DEFAULT_IP_ADDRESS = '127.0.0.1'
-
-# максимальное число клиентов в ожидании подключения к серверу:
+# Максимальная очередь подключений
 MAX_CONNECTIONS = 5
-
-# ограничение длины сообщения в байтах:
+# Максимальная длинна сообщения в байтах
 MAX_PACKAGE_LENGTH = 1024
-
-# кодировка проекта:
+# Кодировка проекта
 ENCODING = 'utf-8'
-
 # Текущий уровень логирования
 LOGGING_LEVEL = logging.DEBUG
 
-# основные ключи протокола JIM:
+# Прококол JIM основные ключи:
 ACTION = 'action'
 TIME = 'time'
 USER = 'user'
@@ -28,7 +21,7 @@ ACCOUNT_NAME = 'account_name'
 SENDER = 'from'
 DESTINATION = 'to'
 
-# вспомогательные ключи протокола JIM:
+# Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
@@ -41,6 +34,7 @@ EXIT = 'exit'
 RESPONSE_200 = {RESPONSE: 200}
 # 400
 RESPONSE_400 = {
-    RESPONSE: 400,
-    ERROR: None
-}
+            RESPONSE: 400,
+            ERROR: None
+        }
+
