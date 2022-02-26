@@ -377,3 +377,43 @@ hi!
 2022-02-23 14:37:14,535 INFO client.py Получено сообщение от пользователя test2:
 how do you do, honey)))?
 2022-02-23 14:38:07,977 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-26 15:20:07,127 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-26 15:20:07,183 INFO transport.py Попытка подключения №1
+2022-02-26 15:20:07,184 DEBUG transport.py Установлено соединение с сервером
+2022-02-26 15:20:07,184 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2022-02-26 15:20:07,189 INFO transport.py Попытка подключения №1
+2022-02-26 15:20:07,190 DEBUG transport.py Установлено соединение с сервером
+2022-02-26 15:20:07,190 DEBUG transport.py Сформировано presence сообщение для пользователя test2
+2022-02-26 15:20:07,218 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:20:07,218 INFO transport.py Соединение с сервером успешно установлено.
+2022-02-26 15:20:07,218 DEBUG transport.py Запрос списка известных пользователей test1
+2022-02-26 15:20:07,254 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:20:07,254 INFO transport.py Соединение с сервером успешно установлено.
+2022-02-26 15:20:07,255 DEBUG transport.py Запрос списка известных пользователей test2
+2022-02-26 15:20:07,820 DEBUG transport.py Запрос контакт листа для пользователя Thread-1
+2022-02-26 15:20:07,821 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645878007.8215652, 'user': 'test2'}
+2022-02-26 15:20:07,823 DEBUG transport.py Запрос контакт листа для пользователя Thread-1
+2022-02-26 15:20:07,823 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645878007.8235636, 'user': 'test1'}
+2022-02-26 15:20:08,301 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3']}
+2022-02-26 15:20:08,307 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test1', 'test3']}
+2022-02-26 15:20:08,397 DEBUG transport.py Запущен процесс - приёмник сообщений с сервера.
+2022-02-26 15:20:08,424 DEBUG transport.py Запущен процесс - приёмник сообщений с сервера.
+2022-02-26 15:21:37,636 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645878097.636019, 'mess_text': 'too late\n'}
+2022-02-26 15:21:38,281 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:21:38,281 INFO transport.py Отправлено сообщение для пользователя test2
+2022-02-26 15:21:38,297 DEBUG main_window.py Отправлено сообщение для test2: too late
+
+2022-02-26 15:21:39,013 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645878097.636019, 'mess_text': 'too late\n'}
+2022-02-26 15:21:39,013 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645878097.636019, 'mess_text': 'too late\n'}
+2022-02-26 15:21:39,013 DEBUG transport.py Получено сообщение от пользователя test1:too late
+
+2022-02-26 15:24:48,108 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645878288.108962, 'mess_text': '...'}
+2022-02-26 15:24:48,442 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:24:48,442 INFO transport.py Отправлено сообщение для пользователя test1
+2022-02-26 15:24:48,453 DEBUG main_window.py Отправлено сообщение для test1: ...
+2022-02-26 15:24:48,793 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645878288.108962, 'mess_text': '...'}
+2022-02-26 15:24:48,793 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645878288.108962, 'mess_text': '...'}
+2022-02-26 15:24:48,793 DEBUG transport.py Получено сообщение от пользователя test2:...
+2022-02-26 15:25:12,832 CRITICAL transport.py Потеряно соединение с сервером.
+2022-02-26 15:25:14,403 DEBUG transport.py Транспорт завершает работу.
+2022-02-26 15:25:15,786 DEBUG transport.py Транспорт завершает работу.
