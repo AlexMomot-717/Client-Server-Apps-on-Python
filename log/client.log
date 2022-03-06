@@ -1,0 +1,829 @@
+2022-02-12 17:38:03,516 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 17:38:03,519 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 17:38:03,519 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test2
+2022-02-12 17:38:05,565 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 17:43:58,828 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 17:44:04,354 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 17:44:04,356 DEBUG decos.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2022-02-12 17:44:04,356 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-12 17:44:04,357 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63208), raddr=('127.0.0.1', 7000)>, {'action': 'presence', 'time': 1644677044.3564024, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля common.utils
+2022-02-12 17:44:04,358 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63208), raddr=('127.0.0.1', 7000)>,) , {}. Вызов из модуля common.utils
+2022-02-12 17:44:04,867 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-02-12 17:44:04,868 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-12 17:44:04,868 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-12 17:44:04,876 DEBUG client.py Запущены процессы
+2022-02-12 17:44:04,880 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63208), raddr=('127.0.0.1', 7000)>,) , {}. Вызов из модуля common.utils
+2022-02-12 17:44:22,919 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1644677062.919913, 'mess_text': 'ghbtn'}
+2022-02-12 17:44:22,920 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63208), raddr=('127.0.0.1', 7000)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1644677062.919913, 'mess_text': 'ghbtn'}) , {}. Вызов из модуля common.utils
+2022-02-12 17:44:22,920 INFO client.py Отправлено сообщение для пользователя test2
+2022-02-12 17:58:56,041 CRITICAL config_client_log.py Test critical event
+2022-02-12 17:58:56,041 ERROR config_client_log.py Test error ivent
+2022-02-12 17:58:56,041 DEBUG config_client_log.py Test debug ivent
+2022-02-12 17:58:56,041 INFO config_client_log.py Test info ivent
+2022-02-12 18:46:47,236 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 18:46:47,249 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 18:46:49,288 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 18:46:49,288 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:44:32,586 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:44:32,587 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:44:32,605 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test2
+2022-02-12 21:44:32,607 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:44:32,619 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 21:44:32,626 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test4
+2022-02-12 21:44:32,642 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:44:32,651 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test3
+2022-02-12 21:44:34,660 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:44:34,676 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:44:34,707 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:44:49,244 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:44:49,255 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 21:44:49,273 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:44:49,280 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test2
+2022-02-12 21:44:51,301 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:44:51,331 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:45:05,128 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:45:05,140 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 21:45:05,151 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:45:05,158 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test2
+2022-02-12 21:45:07,193 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:45:07,209 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:45:34,350 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:45:34,358 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 21:45:34,374 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:45:34,382 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test2
+2022-02-12 21:45:36,411 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:45:36,428 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7000, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:46:06,855 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:46:24,584 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7000, имя пользователя: test1
+2022-02-12 21:46:24,586 DEBUG decos.py Была вызвана функция create_presence c параметрами ('test1',) , {}. Вызов из модуля __main__
+2022-02-12 21:46:24,586 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-12 21:46:24,587 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57877), raddr=('127.0.0.1', 7000)>, {'action': 'presence', 'time': 1644691584.5866294, 'user': {'account_name': 'test1'}}) , {}. Вызов из модуля common.utils
+2022-02-12 21:46:24,590 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57877), raddr=('127.0.0.1', 7000)>,) , {}. Вызов из модуля common.utils
+2022-02-12 21:46:25,094 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-02-12 21:46:25,095 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-12 21:46:25,095 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-12 21:46:25,099 DEBUG client.py Запущены процессы
+2022-02-12 21:46:25,103 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57877), raddr=('127.0.0.1', 7000)>,) , {}. Вызов из модуля common.utils
+2022-02-12 21:46:49,831 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1644691609.8310947, 'mess_text': 'hello, test2!'}
+2022-02-12 21:46:49,832 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57877), raddr=('127.0.0.1', 7000)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1644691609.8310947, 'mess_text': 'hello, test2!'}) , {}. Вызов из модуля common.utils
+2022-02-12 21:46:49,832 INFO client.py Отправлено сообщение для пользователя test2
+2022-02-12 21:47:28,997 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test3', 'time': 1644691648.9971988, 'mess_text': 'hi test3!'}
+2022-02-12 21:47:28,997 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=360, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57877), raddr=('127.0.0.1', 7000)>, {'action': 'message', 'from': 'test1', 'to': 'test3', 'time': 1644691648.9971988, 'mess_text': 'hi test3!'}) , {}. Вызов из модуля common.utils
+2022-02-12 21:47:28,998 INFO client.py Отправлено сообщение для пользователя test3
+2022-02-12 21:58:57,177 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:58:57,190 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-12 21:58:59,226 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:59:23,622 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:59:23,634 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-12 21:59:23,647 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-12 21:59:23,654 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-12 21:59:25,676 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-12 21:59:25,692 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-19 09:23:19,897 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:23:27,780 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 09:23:27,781 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 09:23:27,782 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 09:23:27,782 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62707), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645251807.7828143, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 09:23:27,784 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62707), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:25:49,013 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:25:55,985 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 09:25:58,022 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-19 09:26:20,877 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:26:28,067 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_2
+2022-02-19 09:26:28,068 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_2',) , {}. Вызов из модуля __main__
+2022-02-19 09:26:28,068 DEBUG client.py Сформировано presence сообщение для пользователя client_2
+2022-02-19 09:26:28,069 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53800), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645251988.0683174, 'user': {'account_name': 'client_2'}}) , {}. Вызов из модуля common.utils
+2022-02-19 09:26:28,071 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53800), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:26:28,666 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-02-19 09:26:28,666 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-19 09:26:28,666 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-19 09:26:28,669 DEBUG client.py Запущены процессы
+2022-02-19 09:26:28,671 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53800), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:29:13,005 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_2', 'to': 'client_1', 'time': 1645252153.005361, 'mess_text': 'hello, client_1'}
+2022-02-19 09:29:13,006 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53800), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_2', 'to': 'client_1', 'time': 1645252153.005361, 'mess_text': 'hello, client_1'}) , {}. Вызов из модуля common.utils
+2022-02-19 09:29:13,006 INFO client.py Отправлено сообщение для пользователя client_1
+2022-02-19 09:30:46,560 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53800), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645252246.5595205, 'account_name': 'client_2'}) , {}. Вызов из модуля common.utils
+2022-02-19 09:30:46,561 INFO client.py Завершение работы по команде пользователя.
+2022-02-19 09:30:55,155 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:31:02,153 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 09:31:02,155 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 09:31:02,156 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 09:31:02,157 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61848), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645252262.1569557, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 09:31:02,158 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61848), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:31:37,611 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:31:47,291 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_2
+2022-02-19 09:31:47,293 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_2',) , {}. Вызов из модуля __main__
+2022-02-19 09:31:47,293 DEBUG client.py Сформировано presence сообщение для пользователя client_2
+2022-02-19 09:31:47,294 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58460), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645252307.2936425, 'user': {'account_name': 'client_2'}}) , {}. Вызов из модуля common.utils
+2022-02-19 09:31:47,296 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58460), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:31:47,811 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 400, 'error': 'Имя пользователя уже занято.'},) , {}. Вызов из модуля __main__
+2022-02-19 09:31:47,811 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-02-19 09:31:47,811 ERROR client.py При установке соединения сервер вернул ошибку: 400 : Имя пользователя уже занято.
+2022-02-19 09:32:29,826 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:32:38,328 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 09:32:40,376 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-19 09:33:27,092 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 09:33:33,907 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 09:33:33,908 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 09:33:33,909 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 09:33:33,909 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62619), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645252413.9094605, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 09:33:33,911 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62619), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:33:34,474 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-02-19 09:33:34,474 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-19 09:33:34,475 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-19 09:33:34,478 DEBUG client.py Запущены процессы
+2022-02-19 09:33:34,480 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62619), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 09:35:20,984 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'client_2', 'time': 1645252520.984148, 'mess_text': 'hi, client_2'}
+2022-02-19 09:35:20,985 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62619), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'client_2', 'time': 1645252520.984148, 'mess_text': 'hi, client_2'}) , {}. Вызов из модуля common.utils
+2022-02-19 09:35:20,985 INFO client.py Отправлено сообщение для пользователя client_2
+2022-02-19 10:28:38,054 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 10:28:53,934 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 10:28:53,936 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 10:28:53,936 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 10:28:53,937 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645255733.936383, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 10:28:53,939 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 10:28:54,513 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-02-19 10:28:54,513 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-19 10:28:54,513 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-19 10:28:54,516 DEBUG client.py Запущены процессы
+2022-02-19 10:28:54,518 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 10:29:14,732 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645255754.7323236, 'mess_text': 'hi, me'}
+2022-02-19 10:29:14,733 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645255754.7323236, 'mess_text': 'hi, me'}) , {}. Вызов из модуля common.utils
+2022-02-19 10:29:14,733 INFO client.py Отправлено сообщение для пользователя client_1
+2022-02-19 10:29:14,953 INFO client.py Получено сообщение от пользователя client_1:
+hi, me
+2022-02-19 10:29:14,954 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 10:30:08,454 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645255808.454939, 'mess_text': 'glad to hear from you'}
+2022-02-19 10:30:08,455 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645255808.454939, 'mess_text': 'glad to hear from you'}) , {}. Вызов из модуля common.utils
+2022-02-19 10:30:08,456 INFO client.py Отправлено сообщение для пользователя client_1
+2022-02-19 10:30:08,669 INFO client.py Получено сообщение от пользователя client_1:
+glad to hear from you
+2022-02-19 10:30:08,670 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 10:31:58,032 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645255918.0329328, 'mess_text': "-) it's always pleasure to speak with someone nice and intellegent)))"}
+2022-02-19 10:31:58,032 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645255918.0329328, 'mess_text': "-) it's always pleasure to speak with someone nice and intellegent)))"}) , {}. Вызов из модуля common.utils
+2022-02-19 10:31:58,033 INFO client.py Отправлено сообщение для пользователя client_1
+2022-02-19 10:31:58,055 INFO client.py Получено сообщение от пользователя client_1:
+-) it's always pleasure to speak with someone nice and intellegent)))
+2022-02-19 10:31:58,056 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 10:33:26,757 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52834), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645256006.7571068, 'account_name': 'client_1'}) , {}. Вызов из модуля common.utils
+2022-02-19 10:33:26,758 INFO client.py Завершение работы по команде пользователя.
+2022-02-19 12:29:53,650 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 12:30:17,176 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 12:30:17,178 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 12:30:17,178 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 12:30:17,179 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62789), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645263017.178245, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 12:30:17,182 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=828, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62789), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:31:20,129 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 12:31:27,338 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 12:31:27,340 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 12:31:27,340 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 12:31:27,341 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57249), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645263087.3406317, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 12:31:27,343 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57249), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:31:27,860 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 400, 'error': 'Имя пользователя уже занято.'},) , {}. Вызов из модуля __main__
+2022-02-19 12:31:27,861 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-02-19 12:31:27,861 ERROR client.py При установке соединения сервер вернул ошибку: 400 : Имя пользователя уже занято.
+2022-02-19 12:31:45,745 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 12:31:52,799 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_2
+2022-02-19 12:31:52,801 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_2',) , {}. Вызов из модуля __main__
+2022-02-19 12:31:52,801 DEBUG client.py Сформировано presence сообщение для пользователя client_2
+2022-02-19 12:31:52,802 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62733), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645263112.8018491, 'user': {'account_name': 'client_2'}}) , {}. Вызов из модуля common.utils
+2022-02-19 12:31:52,804 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=764, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62733), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:32:31,382 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-19 12:32:38,207 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: client_1
+2022-02-19 12:32:38,208 DEBUG decos.py Была вызвана функция create_presence c параметрами ('client_1',) , {}. Вызов из модуля __main__
+2022-02-19 12:32:38,209 DEBUG client.py Сформировано presence сообщение для пользователя client_1
+2022-02-19 12:32:38,209 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1645263158.2098682, 'user': {'account_name': 'client_1'}}) , {}. Вызов из модуля common.utils
+2022-02-19 12:32:38,212 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:32:38,777 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-02-19 12:32:38,777 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-19 12:32:38,777 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-19 12:32:38,780 DEBUG client.py Запущены процессы
+2022-02-19 12:32:38,782 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:33:10,038 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645263190.0382106, 'mess_text': 'hi'}
+2022-02-19 12:33:10,039 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645263190.0382106, 'mess_text': 'hi'}) , {}. Вызов из модуля common.utils
+2022-02-19 12:33:10,039 INFO client.py Отправлено сообщение для пользователя client_1
+2022-02-19 12:33:10,458 INFO client.py Получено сообщение от пользователя client_1:
+hi
+2022-02-19 12:33:10,459 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:33:47,237 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'hi, lucky me))', 'time': 1645263227.2360296, 'mess_text': 'j'}
+2022-02-19 12:33:47,237 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'hi, lucky me))', 'time': 1645263227.2360296, 'mess_text': 'j'}) , {}. Вызов из модуля common.utils
+2022-02-19 12:33:47,237 INFO client.py Отправлено сообщение для пользователя hi, lucky me))
+2022-02-19 12:34:10,559 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645263250.5597134, 'mess_text': 'hi, lucky me))'}
+2022-02-19 12:34:10,560 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'client_1', 'to': 'client_1', 'time': 1645263250.5597134, 'mess_text': 'hi, lucky me))'}) , {}. Вызов из модуля common.utils
+2022-02-19 12:34:10,561 INFO client.py Отправлено сообщение для пользователя client_1
+2022-02-19 12:34:10,820 INFO client.py Получено сообщение от пользователя client_1:
+hi, lucky me))
+2022-02-19 12:34:10,821 DEBUG decos.py Была вызвана функция get_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.utils
+2022-02-19 12:34:35,769 DEBUG decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 62765), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1645263275.7683446, 'account_name': 'client_1'}) , {}. Вызов из модуля common.utils
+2022-02-19 12:34:35,770 INFO client.py Завершение работы по команде пользователя.
+2022-02-23 11:35:50,389 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:35:50,393 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 11:35:50,393 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 11:35:52,429 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:35:52,429 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:36:14,819 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:36:14,821 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 11:36:14,833 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:36:14,835 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 11:36:16,853 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:36:16,868 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:36:39,756 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:36:39,763 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 11:36:39,767 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:36:39,773 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 11:36:41,808 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:36:41,823 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:36:54,371 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:36:54,374 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 11:36:54,408 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:36:54,410 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 11:36:56,413 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:36:56,444 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:47:24,908 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:47:24,911 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 11:47:24,965 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:47:24,967 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 11:47:26,960 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:47:27,008 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:55:44,577 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:55:44,581 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 11:55:44,634 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 11:55:44,636 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 11:55:46,608 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 11:55:46,669 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 12:15:08,581 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:15:08,584 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 12:15:08,585 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 12:15:10,617 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 12:29:09,925 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:29:09,927 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:29:09,928 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 12:29:09,929 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 12:29:11,962 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 12:30:57,269 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:30:57,275 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 12:30:57,278 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:30:57,281 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 12:30:59,318 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 12:36:56,673 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:36:56,676 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 12:36:56,677 DEBUG decos.py Была вызвана функция arg_parser c параметрами () , {}. Вызов из модуля __main__
+2022-02-23 12:36:56,679 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 12:36:58,718 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 12:50:30,258 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 12:50:30,259 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 12:50:32,290 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 12:50:32,290 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 14:19:27,582 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:19:27,584 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:19:29,617 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 14:19:29,617 CRITICAL client.py Не удалось подключиться к серверу 127.0.0.1:7777, конечный компьютер отверг запрос на подключение.
+2022-02-23 14:23:36,104 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:23:36,107 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-23 14:23:36,660 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:23:36,660 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:25:00,521 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:25:00,521 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:25:02,545 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-23 14:25:02,546 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2022-02-23 14:25:03,473 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:25:03,473 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:25:03,518 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:25:03,519 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:27:33,519 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:27:33,519 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:27:35,571 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2022-02-23 14:27:37,627 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:27:37,628 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:27:37,682 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:27:37,683 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:27:57,150 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:27:57,172 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:27:59,209 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-23 14:27:59,209 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2022-02-23 14:27:59,679 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:27:59,680 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:27:59,723 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:27:59,723 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:28:36,667 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:28:36,669 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-23 14:28:37,220 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:28:37,221 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:33:26,774 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:33:26,780 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:33:28,802 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-23 14:33:28,802 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2022-02-23 14:33:31,214 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:33:31,215 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:33:31,273 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:33:31,273 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:33:31,297 DEBUG client.py Запрос списка известных пользователей test1
+2022-02-23 14:33:31,430 DEBUG client.py Запрос списка известных пользователей test2
+2022-02-23 14:33:31,834 DEBUG client.py Запрос контакт листа для пользователя test1
+2022-02-23 14:33:31,834 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1645616011.8340755, 'user': 'test1'}
+2022-02-23 14:33:31,834 DEBUG client.py Запрос контакт листа для пользователя test2
+2022-02-23 14:33:31,835 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1645616011.8350763, 'user': 'test2'}
+2022-02-23 14:33:32,308 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-23 14:33:32,309 DEBUG client.py Запущены процессы
+2022-02-23 14:33:32,311 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-23 14:33:32,312 DEBUG client.py Запущены процессы
+2022-02-23 14:34:00,621 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645616040.6212704, 'mess_text': 'hello, test1'}
+2022-02-23 14:34:02,409 INFO client.py Отправлено сообщение для пользователя test1
+2022-02-23 14:34:03,433 INFO client.py Получено сообщение от пользователя test2:
+hello, test1
+2022-02-23 14:34:33,522 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645616073.5229778, 'mess_text': 'hi!'}
+2022-02-23 14:34:33,541 INFO client.py Отправлено сообщение для пользователя test2
+2022-02-23 14:34:33,728 INFO client.py Получено сообщение от пользователя test1:
+hi!
+2022-02-23 14:34:53,470 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:34:53,474 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:34:55,496 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2022-02-23 14:34:55,930 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:34:55,930 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:34:55,995 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:34:55,995 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:34:56,018 DEBUG client.py Запрос списка известных пользователей test1
+2022-02-23 14:34:56,101 DEBUG client.py Запрос списка известных пользователей test2
+2022-02-23 14:34:56,571 DEBUG client.py Запрос контакт листа для пользователя test2
+2022-02-23 14:34:56,571 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1645616096.5716474, 'user': 'test2'}
+2022-02-23 14:34:56,572 DEBUG client.py Запрос контакт листа для пользователя test1
+2022-02-23 14:34:56,572 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1645616096.572647, 'user': 'test1'}
+2022-02-23 14:34:57,055 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-23 14:34:57,057 DEBUG client.py Запущены процессы
+2022-02-23 14:34:57,058 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-23 14:34:57,059 DEBUG client.py Запущены процессы
+2022-02-23 14:35:48,234 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-23 14:35:48,234 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-23 14:35:54,563 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-02-23 14:35:54,588 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-23 14:35:56,601 DEBUG client.py Сформировано presence сообщение для пользователя test1
+2022-02-23 14:35:56,617 DEBUG client.py Сформировано presence сообщение для пользователя test2
+2022-02-23 14:35:57,112 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:35:57,112 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:35:57,168 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-02-23 14:35:57,169 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-02-23 14:35:57,195 DEBUG client.py Запрос списка известных пользователей test1
+2022-02-23 14:35:57,268 DEBUG client.py Запрос списка известных пользователей test2
+2022-02-23 14:35:57,727 DEBUG client.py Запрос контакт листа для пользователя test1
+2022-02-23 14:35:57,727 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1645616157.7275822, 'user': 'test1'}
+2022-02-23 14:35:57,731 DEBUG client.py Запрос контакт листа для пользователя test2
+2022-02-23 14:35:57,731 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1645616157.731583, 'user': 'test2'}
+2022-02-23 14:35:58,208 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-23 14:35:58,209 DEBUG client.py Запущены процессы
+2022-02-23 14:35:58,211 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-02-23 14:35:58,212 DEBUG client.py Запущены процессы
+2022-02-23 14:37:10,857 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645616230.8575144, 'mess_text': 'how do you do, honey)))?'}
+2022-02-23 14:37:13,483 INFO client.py Отправлено сообщение для пользователя test1
+2022-02-23 14:37:14,535 INFO client.py Получено сообщение от пользователя test2:
+how do you do, honey)))?
+2022-02-23 14:38:07,977 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-26 15:20:07,127 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-02-26 15:20:07,183 INFO transport.py Попытка подключения №1
+2022-02-26 15:20:07,184 DEBUG transport.py Установлено соединение с сервером
+2022-02-26 15:20:07,184 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2022-02-26 15:20:07,189 INFO transport.py Попытка подключения №1
+2022-02-26 15:20:07,190 DEBUG transport.py Установлено соединение с сервером
+2022-02-26 15:20:07,190 DEBUG transport.py Сформировано presence сообщение для пользователя test2
+2022-02-26 15:20:07,218 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:20:07,218 INFO transport.py Соединение с сервером успешно установлено.
+2022-02-26 15:20:07,218 DEBUG transport.py Запрос списка известных пользователей test1
+2022-02-26 15:20:07,254 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:20:07,254 INFO transport.py Соединение с сервером успешно установлено.
+2022-02-26 15:20:07,255 DEBUG transport.py Запрос списка известных пользователей test2
+2022-02-26 15:20:07,820 DEBUG transport.py Запрос контакт листа для пользователя Thread-1
+2022-02-26 15:20:07,821 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645878007.8215652, 'user': 'test2'}
+2022-02-26 15:20:07,823 DEBUG transport.py Запрос контакт листа для пользователя Thread-1
+2022-02-26 15:20:07,823 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645878007.8235636, 'user': 'test1'}
+2022-02-26 15:20:08,301 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3']}
+2022-02-26 15:20:08,307 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test1', 'test3']}
+2022-02-26 15:20:08,397 DEBUG transport.py Запущен процесс - приёмник сообщений с сервера.
+2022-02-26 15:20:08,424 DEBUG transport.py Запущен процесс - приёмник сообщений с сервера.
+2022-02-26 15:21:37,636 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645878097.636019, 'mess_text': 'too late\n'}
+2022-02-26 15:21:38,281 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:21:38,281 INFO transport.py Отправлено сообщение для пользователя test2
+2022-02-26 15:21:38,297 DEBUG main_window.py Отправлено сообщение для test2: too late
+
+2022-02-26 15:21:39,013 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645878097.636019, 'mess_text': 'too late\n'}
+2022-02-26 15:21:39,013 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1645878097.636019, 'mess_text': 'too late\n'}
+2022-02-26 15:21:39,013 DEBUG transport.py Получено сообщение от пользователя test1:too late
+
+2022-02-26 15:24:48,108 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645878288.108962, 'mess_text': '...'}
+2022-02-26 15:24:48,442 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-26 15:24:48,442 INFO transport.py Отправлено сообщение для пользователя test1
+2022-02-26 15:24:48,453 DEBUG main_window.py Отправлено сообщение для test1: ...
+2022-02-26 15:24:48,793 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645878288.108962, 'mess_text': '...'}
+2022-02-26 15:24:48,793 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1645878288.108962, 'mess_text': '...'}
+2022-02-26 15:24:48,793 DEBUG transport.py Получено сообщение от пользователя test2:...
+2022-02-26 15:25:12,832 CRITICAL transport.py Потеряно соединение с сервером.
+2022-02-26 15:25:14,403 DEBUG transport.py Транспорт завершает работу.
+2022-02-26 15:25:15,786 DEBUG transport.py Транспорт завершает работу.
+2022-02-27 15:18:32,172 INFO transport.py Попытка подключения №1
+2022-02-27 15:18:35,230 INFO transport.py Попытка подключения №2
+2022-02-27 15:18:38,288 INFO transport.py Попытка подключения №3
+2022-02-27 15:18:41,343 INFO transport.py Попытка подключения №4
+2022-02-27 15:18:44,399 INFO transport.py Попытка подключения №5
+2022-02-27 15:18:47,452 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-02-27 15:19:10,444 INFO transport.py Попытка подключения №1
+2022-02-27 15:19:10,445 DEBUG transport.py Установлено соединение с сервером
+2022-02-27 15:19:10,445 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2022-02-27 15:19:11,006 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-02-27 15:19:11,007 INFO transport.py Соединение с сервером успешно установлено.
+2022-02-27 15:19:11,007 DEBUG transport.py Запрос списка известных пользователей test1
+2022-02-27 15:19:11,552 DEBUG transport.py Запрос контакт листа для пользователя Thread-6
+2022-02-27 15:19:11,552 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1645964351.5529795, 'user': 'test1'}
+2022-02-27 15:19:12,032 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3']}
+2022-02-27 15:19:24,676 DEBUG transport.py Запрос списка известных пользователей test1
+2022-02-27 15:19:24,820 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-02-27 15:19:35,524 DEBUG transport.py Запрос списка известных пользователей test1
+2022-02-27 15:19:36,025 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-06 16:12:46,033 DEBUG client.py Args loaded
+2022-03-06 16:14:24,139 DEBUG client.py Args loaded
+2022-03-06 16:14:38,363 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 16:14:38,363 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 16:14:38,738 DEBUG client.py Keys successfully loaded.
+2022-03-06 16:16:24,789 DEBUG client.py Args loaded
+2022-03-06 16:16:38,815 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 16:16:38,816 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 16:16:39,115 DEBUG client.py Keys successfully loaded.
+2022-03-06 16:16:39,204 INFO transport.py Попытка подключения №1
+2022-03-06 16:16:39,205 DEBUG transport.py Connection established.
+2022-03-06 16:16:39,205 DEBUG transport.py Starting auth dialog.
+2022-03-06 16:16:39,241 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 16:16:39,244 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646572599.2434974, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 16:16:44,246 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 23, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 11, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 16:16:53,101 DEBUG client.py Args loaded
+2022-03-06 16:17:04,861 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 16:17:04,861 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 16:17:05,164 DEBUG client.py Keys successfully loaded.
+2022-03-06 16:17:05,253 INFO transport.py Попытка подключения №1
+2022-03-06 16:17:05,254 DEBUG transport.py Connection established.
+2022-03-06 16:17:05,254 DEBUG transport.py Starting auth dialog.
+2022-03-06 16:17:05,272 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 16:17:05,274 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646572625.2744484, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 16:17:10,277 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 23, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 11, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 16:24:16,865 DEBUG client.py Args loaded
+2022-03-06 16:24:29,650 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 16:24:29,650 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 16:24:29,956 DEBUG client.py Keys successfully loaded.
+2022-03-06 16:24:30,045 INFO transport.py Попытка подключения №1
+2022-03-06 16:24:30,046 DEBUG transport.py Connection established.
+2022-03-06 16:24:30,046 DEBUG transport.py Starting auth dialog.
+2022-03-06 16:24:30,064 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 16:24:30,066 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646573070.0664687, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 16:24:35,068 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 23, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 17, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 17:39:41,848 DEBUG client.py Args loaded
+2022-03-06 17:42:14,064 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 17:42:14,064 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 17:42:14,435 DEBUG client.py Keys successfully loaded.
+2022-03-06 17:42:14,529 INFO transport.py Попытка подключения №1
+2022-03-06 17:42:14,529 DEBUG transport.py Connection established.
+2022-03-06 17:42:14,529 DEBUG transport.py Starting auth dialog.
+2022-03-06 17:42:14,560 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 17:42:14,560 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646577734.5606904, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 17:42:19,562 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 23, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 17, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 17:49:18,467 DEBUG client.py Args loaded
+2022-03-06 17:49:32,436 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 17:49:32,436 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 17:49:32,784 DEBUG client.py Keys successfully loaded.
+2022-03-06 17:49:32,878 INFO transport.py Попытка подключения №1
+2022-03-06 17:49:32,880 DEBUG transport.py Connection established.
+2022-03-06 17:49:32,880 DEBUG transport.py Starting auth dialog.
+2022-03-06 17:49:32,912 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 17:49:32,915 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646578172.9143577, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 17:49:37,917 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 23, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 17, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 17:55:19,002 DEBUG client.py Args loaded
+2022-03-06 17:55:43,342 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 17:55:43,342 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 17:55:43,697 DEBUG client.py Keys successfully loaded.
+2022-03-06 17:55:43,780 INFO transport.py Попытка подключения №1
+2022-03-06 17:55:43,780 DEBUG transport.py Connection established.
+2022-03-06 17:55:43,781 DEBUG transport.py Starting auth dialog.
+2022-03-06 17:55:43,814 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 17:55:43,816 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646578543.8158996, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 17:55:48,819 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 23, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 17, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 22:01:03,517 DEBUG client.py Args loaded
+2022-03-06 22:01:17,968 DEBUG client.py Using USERNAME = test2, PASSWD = 123456.
+2022-03-06 22:01:17,968 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-03-06 22:01:18,225 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:01:18,320 INFO transport.py Попытка подключения №1
+2022-03-06 22:01:18,321 DEBUG transport.py Connection established.
+2022-03-06 22:01:18,321 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:01:18,363 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2022-03-06 22:01:18,365 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646593278.3657682, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtrfkZ/5Xtj72x44QP9b5\neTenYYlSJkkb6X+jL4pqATUwGcvvcxBDtRrR0j1VZzhdlUvetoA3MvecULu3jTvg\nRhcrRHQRIzgMSjNV9ZGFBqhZvQmwGJEDI72dAjLyb1e5t1fT45o2DRfA+Zgxt+N0\ntTIgV7xIQiJrkGkaTje1oXqa9a1MH3o2bMLyrnfv2FE3SKdEQK5GUy+ec0P42QUx\njQ4GG2tEVYHJHS8tiQ+Rwz2Qcubs2YeqmLiUP6ZNdRLEZxn4YN0YNsTPEYzre2qo\n/nAAuWSixjOzt8OQQoSlOjL+VcDZBTitNSmnCMtjcVeTj36J5jUsc3onQofaWf1M\npQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:01:23,368 DEBUG transport.py Connection error.
+Traceback (most recent call last):
+  File "C:\Users\momot\PycharmProjects\pythonProject3\client\transport.py", line 121, in connection_init
+    ans = get_message(self.transport)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\decos.py", line 30, in log_saver
+    ret = func_to_log(*args, **kwargs)
+  File "C:\Users\momot\PycharmProjects\pythonProject3\common\utils.py", line 17, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-06 22:06:07,157 DEBUG client.py Args loaded
+2022-03-06 22:06:20,714 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 22:06:20,714 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 22:06:20,828 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:06:20,872 INFO transport.py Попытка подключения №1
+2022-03-06 22:06:23,920 INFO transport.py Попытка подключения №2
+2022-03-06 22:06:26,954 INFO transport.py Попытка подключения №3
+2022-03-06 22:06:29,994 INFO transport.py Попытка подключения №4
+2022-03-06 22:06:33,041 INFO transport.py Попытка подключения №5
+2022-03-06 22:06:36,054 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-03-06 22:07:11,958 DEBUG client.py Args loaded
+2022-03-06 22:07:28,844 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 22:07:28,844 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 22:07:28,952 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:07:29,003 INFO transport.py Попытка подключения №1
+2022-03-06 22:07:29,004 DEBUG transport.py Connection established.
+2022-03-06 22:07:29,004 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:07:29,029 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 22:07:29,031 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646593649.0313354, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:07:29,534 DEBUG transport.py Server response = {'response': 400, 'error': 'Пользователь не зарегистрирован.'}.
+2022-03-06 22:09:45,485 DEBUG client.py Args loaded
+2022-03-06 22:09:59,850 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 22:09:59,850 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 22:09:59,956 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:10:00,017 INFO transport.py Попытка подключения №1
+2022-03-06 22:10:00,018 DEBUG transport.py Connection established.
+2022-03-06 22:10:00,018 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:10:00,039 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 22:10:00,040 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646593800.0405307, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:10:00,545 DEBUG transport.py Server response = {'response': 511, 'bin': '8032c3e0efb6f398330fa707f0b39e018f03d9e962e003d3856e4725e960bad40543a22fa1f506739a7e3e79cf95029e621bd2b4f627b04b3f3a1d04d6434bec'}.
+2022-03-06 22:10:00,547 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:10:00,547 DEBUG transport.py Запрос списка известных пользователей test1
+2022-03-06 22:10:01,172 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-06 22:10:01,172 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646593801.1721904, 'user': 'test1'}
+2022-03-06 22:10:01,620 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-06 22:10:01,620 DEBUG client.py Transport ready.
+2022-03-06 22:10:01,622 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 22:10:11,868 DEBUG transport.py Создание контакта test2
+2022-03-06 22:10:12,382 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:10:12,404 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001DFE05C5790>
+2022-03-06 22:10:17,357 DEBUG transport.py Создание контакта test3
+2022-03-06 22:10:17,507 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:10:17,522 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001DFE06090D0>
+2022-03-06 22:10:27,883 DEBUG transport.py Запрос публичного ключа для test2
+2022-03-06 22:10:28,211 ERROR transport.py Не удалось получить ключ собеседникаtest2.
+2022-03-06 22:10:28,211 DEBUG main_window.py Загружен открытый ключ для test2
+2022-03-06 22:11:20,004 CRITICAL transport.py Потеряно соединение с сервером.
+2022-03-06 22:11:21,768 DEBUG transport.py Транспорт завершает работу.
+2022-03-06 22:11:38,043 DEBUG client.py Args loaded
+2022-03-06 22:11:47,920 DEBUG client.py Using USERNAME = test3, PASSWD = 123456.
+2022-03-06 22:11:47,920 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2022-03-06 22:11:49,814 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:11:49,975 INFO transport.py Попытка подключения №1
+2022-03-06 22:11:49,976 DEBUG transport.py Connection established.
+2022-03-06 22:11:49,976 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:11:49,993 DEBUG transport.py Passwd hash ready: b'f44dbf0c934a47298490571c4297202a5405bb64709cb564b08d6cfc7ec4a30dd85c6abe4fba002654cc1aba28e755901d836d7b28db2eff6bdd84c006410f3b'
+2022-03-06 22:11:49,995 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646593909.9954605, 'user': {'account_name': 'test3', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwWWlUQhoYZBE0rCUqnhw\nhArnNvT83QwA3EKR87CRHX/UKOSGXLR6cYdPLYNX3s6xlFqhF7nYuk60wqkxYNPq\nAkdo3QV3koaZQc+84WGBCOVeFWgYbKq1Y9CzhKlSy+6NgWCnlVC8PI1nRaZyRa85\nNAV6W7C1GUtygjP6RJB53WgqE4eFWXud9flbVVHkD7N7KSCLjBWo8PRaE2Jb3HSs\n9YgtMKYtXVZuKwvHE2XBfgPO/pG1UI3m/Y886rRIriCLmzdyju9HiStsjI19d0yX\nFA0x1HWQHuOvhXdWxK8wqBtFUIJ828ayKJ9+15VcVd6MxtWS+nhOj4KY5vQy+3O+\nTwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:11:50,537 DEBUG transport.py Server response = {'response': 511, 'bin': 'c5ce2512e8619adfe2e6e4ad1d4a0121adbe2e553313b6626c3dd9e018bb27a39bd8745535dbe099fd9b35407377ee3be5c47ae2a6efbe0d0cde6e12e13b2ae1'}.
+2022-03-06 22:11:50,538 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:11:50,538 DEBUG transport.py Запрос списка известных пользователей test3
+2022-03-06 22:11:51,156 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 22:11:51,156 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646593911.1564634, 'user': 'test3'}
+2022-03-06 22:11:51,622 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-06 22:11:51,623 DEBUG client.py Transport ready.
+2022-03-06 22:11:51,705 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 22:12:00,161 DEBUG transport.py Создание контакта test2
+2022-03-06 22:12:00,369 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:12:00,398 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0000022EAA5B3CA0>
+2022-03-06 22:12:00,629 CRITICAL transport.py Потеряно соединение с сервером.
+2022-03-06 22:12:04,654 DEBUG transport.py Транспорт завершает работу.
+2022-03-06 22:13:03,967 DEBUG client.py Args loaded
+2022-03-06 22:13:21,578 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 22:13:21,579 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 22:13:21,804 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:13:21,891 INFO transport.py Попытка подключения №1
+2022-03-06 22:13:21,892 DEBUG transport.py Connection established.
+2022-03-06 22:13:21,892 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:13:21,910 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 22:13:21,911 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646594001.9112678, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:13:22,434 DEBUG transport.py Server response = {'response': 511, 'bin': 'acdd67663c01a19789adbf4741cce7e2f2990da819ec38f8139b6c99efbc05631ed02dd954377aa4ff3e59ddba19f5e3e2900bf5613f4885123c639cdda9af07'}.
+2022-03-06 22:13:22,436 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:13:22,437 DEBUG transport.py Запрос списка известных пользователей test1
+2022-03-06 22:13:23,048 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 22:13:23,049 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646594003.0482662, 'user': 'test1'}
+2022-03-06 22:13:23,517 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3']}
+2022-03-06 22:13:23,634 DEBUG client.py Transport ready.
+2022-03-06 22:13:23,733 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 22:13:37,094 DEBUG transport.py Запрос публичного ключа для test2
+2022-03-06 22:13:37,767 ERROR transport.py Не удалось получить ключ собеседникаtest2.
+2022-03-06 22:13:37,767 DEBUG main_window.py Загружен открытый ключ для test2
+2022-03-06 22:42:37,493 DEBUG client.py Args loaded
+2022-03-06 22:43:05,114 DEBUG client.py Using USERNAME = user1, PASSWD = 123456.
+2022-03-06 22:43:05,114 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: user1
+2022-03-06 22:43:10,984 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:43:11,152 INFO transport.py Попытка подключения №1
+2022-03-06 22:43:14,195 INFO transport.py Попытка подключения №2
+2022-03-06 22:43:17,227 INFO transport.py Попытка подключения №3
+2022-03-06 22:43:20,259 INFO transport.py Попытка подключения №4
+2022-03-06 22:43:23,290 INFO transport.py Попытка подключения №5
+2022-03-06 22:43:26,336 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-03-06 22:43:45,985 DEBUG client.py Args loaded
+2022-03-06 22:43:56,506 DEBUG client.py Using USERNAME = user1, PASSWD = 123456.
+2022-03-06 22:43:56,507 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: user1
+2022-03-06 22:43:56,750 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:43:56,837 INFO transport.py Попытка подключения №1
+2022-03-06 22:43:56,838 DEBUG transport.py Connection established.
+2022-03-06 22:43:56,838 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:43:56,873 DEBUG transport.py Passwd hash ready: b'188e1be67d44cd1aac694afe5b65d85b283e4d9ffae922e20706a0e19d2e4da024320ffca359a2e1ef47775288607e349d94bfa8c09baa1bd98902951f36c0fc'
+2022-03-06 22:43:56,875 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646595836.874634, 'user': {'account_name': 'user1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq9qNomx7rWw/cu/kcALK\nsvoPzRuE48tnPxsT3Ibw7iTv+BCzqSaIung9zr/5+RlRq0Hns4iJ9Dt6AiFBrBBY\nIO6bEvtwT6gt0HIZ6ikk2bTuviT+q/PsxoHE73DqzYpWuugA6rQhFMm4CIIjxVS3\n7u3VXXAEDP9AiacTyoGC+xknIxrNLjCLyhLB/xITW/QZ5zT/58HC3ZRJ4U9FGMTq\n0IL5T+QCzwAZK+FuT8RvqfHY9yNLN42zg4JXVlbxC+rDeM7wPquQOg1qZ7QtzQYM\nMcNPasBoDQ6JflHobUe82KtsMe7bZLeK4eKlc4ndCG9shSl5HAPDE4hkjNOA61yb\nIQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:43:57,399 DEBUG transport.py Server response = {'response': 511, 'bin': '9ba92d4c3b94806d6467bb69959ae0a9782065cbf771bec1ef0a3f6c1dc9556f3781d8027decae4b9429998da0024c59ee95ae6f543ef5ff65df0c92b242d890'}.
+2022-03-06 22:43:57,401 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:43:57,401 DEBUG transport.py Запрос списка известных пользователей user1
+2022-03-06 22:43:58,028 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 22:43:58,029 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646595838.0290666, 'user': 'user1'}
+2022-03-06 22:43:58,473 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-06 22:43:58,474 DEBUG client.py Transport ready.
+2022-03-06 22:43:58,592 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 22:44:23,582 DEBUG transport.py Создание контакта test2
+2022-03-06 22:44:23,989 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:44:24,031 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001D6A9B568B0>
+2022-03-06 22:44:24,219 CRITICAL transport.py Потеряно соединение с сервером.
+2022-03-06 22:44:27,320 DEBUG transport.py Транспорт завершает работу.
+2022-03-06 22:47:07,574 DEBUG client.py Args loaded
+2022-03-06 22:47:21,706 DEBUG client.py Using USERNAME = test2, PASSWD = 123456.
+2022-03-06 22:47:21,707 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-03-06 22:47:21,818 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:47:21,921 INFO transport.py Попытка подключения №1
+2022-03-06 22:47:24,957 INFO transport.py Попытка подключения №2
+2022-03-06 22:47:27,985 INFO transport.py Попытка подключения №3
+2022-03-06 22:47:31,025 INFO transport.py Попытка подключения №4
+2022-03-06 22:47:34,094 INFO transport.py Попытка подключения №5
+2022-03-06 22:47:37,133 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-03-06 22:48:04,350 DEBUG client.py Args loaded
+2022-03-06 22:48:14,545 DEBUG client.py Using USERNAME = user2, PASSWD = 123456.
+2022-03-06 22:48:14,546 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: user2
+2022-03-06 22:48:16,732 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:48:16,874 INFO transport.py Попытка подключения №1
+2022-03-06 22:48:19,902 INFO transport.py Попытка подключения №2
+2022-03-06 22:48:22,939 INFO transport.py Попытка подключения №3
+2022-03-06 22:48:25,973 INFO transport.py Попытка подключения №4
+2022-03-06 22:48:29,027 INFO transport.py Попытка подключения №5
+2022-03-06 22:48:32,076 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-03-06 22:50:49,624 DEBUG client.py Args loaded
+2022-03-06 22:51:08,258 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 22:51:08,258 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 22:51:08,509 DEBUG client.py Keys successfully loaded.
+2022-03-06 22:51:08,597 INFO transport.py Попытка подключения №1
+2022-03-06 22:51:08,598 DEBUG transport.py Connection established.
+2022-03-06 22:51:08,599 DEBUG transport.py Starting auth dialog.
+2022-03-06 22:51:08,626 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 22:51:08,629 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646596268.628736, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 22:51:09,156 DEBUG transport.py Server response = {'response': 511, 'bin': 'd20cdaba8c8155e475f4f0459bf6a012a5b43b59793f556d9f0df888febf7c5eea0af6016dabdf81b3ffd4baa0cc76b347b30e3753f52b2d8644e562e9293766'}.
+2022-03-06 22:51:09,157 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:51:09,157 DEBUG transport.py Запрос списка известных пользователей test1
+2022-03-06 22:51:09,818 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 22:51:09,819 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646596269.8195097, 'user': 'test1'}
+2022-03-06 22:51:10,249 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3']}
+2022-03-06 22:51:10,322 DEBUG client.py Transport ready.
+2022-03-06 22:51:10,439 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 22:51:15,297 DEBUG transport.py Запрос публичного ключа для test2
+2022-03-06 22:51:15,328 ERROR transport.py Не удалось получить ключ собеседникаtest2.
+2022-03-06 22:51:15,328 DEBUG main_window.py Загружен открытый ключ для test2
+2022-03-06 22:51:19,472 DEBUG transport.py Запрос публичного ключа для test3
+2022-03-06 22:51:19,909 DEBUG main_window.py Загружен открытый ключ для test3
+2022-03-06 22:51:37,211 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test3', 'time': 1646596297.2117226, 'mess_text': 'mabM8Rwaa7YofM8n/zAwknXANCVYUUKOtgXmsumz6wlV+N8rW5ZXlqDNCyYnbCYH4fzunB+g62oDzHvdy1ggc6VKbi/l3MyzWDZuOpJM0670aqboDP58OSuZNd3LGrcQi0IEvgEKHMr+qipAsmvQbUgoqGDMzjEGbrsq7YvGTFb2yyETpYv411+MqYnK+VwLin14SiCqm+DL78Ihio5ixZ4dPwu+DW8RWR5YaeSIPx87xB3u/E8Yvv7+FP8UQnp0E0xzE5asUk4Z45tAzF/xd4MwmeBy5U9KituCAcTogt5LMQggdr5W5VCBOm/IdawqeQaKVoCgmVAo0DcGK/4cvg=='}
+2022-03-06 22:51:38,192 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-03-06 22:51:52,740 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test3', 'time': 1646596312.7400265, 'mess_text': 'oimxnAc4Td5nU6Bi8OLtZO01JxgDYfriuCUB55gvG5j42r8++Zajdd7v+bwLrjrmy+CVi71D/RWc3fPeOaAvKj+OJ8QglzWmf93CiSs7lw2mx25/dxYQ6TxqQMDCAWr8sSSFsklIr3ClyZGDJK740CiI1pE3XQzuNxRhQmwJAb/LCTkPfPLO0vvzfn1ws7xOFWg59G7iMcNPZFQPy+sl9+IQvRHS2sjGulTZloyVjkZuUXCOWA/7prKuQXUibmJy2CfvEsOd6z3DzPFEvzN8CLFqm8lbKxLAiCpYGqh0FmD9/6j4xuPuVa1gX2Jk8/GO1t02OPDeGsvr4XISKs0trw=='}
+2022-03-06 22:51:52,967 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-03-06 22:51:58,653 DEBUG transport.py Запрос публичного ключа для test2
+2022-03-06 22:51:59,075 ERROR transport.py Не удалось получить ключ собеседникаtest2.
+2022-03-06 22:51:59,075 DEBUG main_window.py Загружен открытый ключ для test2
+2022-03-06 22:52:10,700 DEBUG transport.py Создание контакта user1
+2022-03-06 22:52:11,364 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 22:52:11,379 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001FA9C43EC10>
+2022-03-06 22:53:59,764 CRITICAL transport.py Потеряно соединение с сервером.
+2022-03-06 23:01:16,259 DEBUG client.py Args loaded
+2022-03-06 23:01:29,041 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 23:01:29,041 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 23:01:29,281 DEBUG client.py Keys successfully loaded.
+2022-03-06 23:01:29,390 INFO transport.py Попытка подключения №1
+2022-03-06 23:01:29,390 DEBUG transport.py Connection established.
+2022-03-06 23:01:29,390 DEBUG transport.py Starting auth dialog.
+2022-03-06 23:01:29,422 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 23:01:29,422 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646596889.4222069, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 23:01:29,922 DEBUG transport.py Server response = {'response': 511, 'bin': 'a260c5fef4563b8500c030e7907671ebd042df1a120f77650805d290d1e3bde98bc7dd66427b685cfab775b5db9a6c23899584c6efe1dba9bfcbe85a3be1e4d9'}.
+2022-03-06 23:01:29,922 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 23:01:29,922 DEBUG transport.py Запрос списка известных пользователей test1
+2022-03-06 23:01:30,547 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 23:01:30,547 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646596890.5477798, 'user': 'test1'}
+2022-03-06 23:01:31,000 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3', 'user1']}
+2022-03-06 23:01:31,157 DEBUG client.py Transport ready.
+2022-03-06 23:01:31,244 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 23:01:37,441 DEBUG transport.py Запрос публичного ключа для test2
+2022-03-06 23:01:37,628 ERROR transport.py Не удалось получить ключ собеседникаtest2.
+2022-03-06 23:01:37,628 DEBUG main_window.py Загружен открытый ключ для test2
+2022-03-06 23:01:47,946 DEBUG transport.py Запрос публичного ключа для test3
+2022-03-06 23:01:48,326 DEBUG main_window.py Загружен открытый ключ для test3
+2022-03-06 23:01:55,530 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test3', 'time': 1646596915.5306718, 'mess_text': 'KwNTFuQjCUPtCtz9wo476ROEdC9d/hHur1Uo4XRk4+1G1fUZQyhmJvTsDMY4tqoqs+KlzuEEeI+VHtBHBa34p3VDrBoLMoZWFDa34ZaqrJ6uLLf/up0dN8rvUK9Mp0E8BgBvRsUNPnvFuZXzR9VzwVsnSVyGxCaFeym02d9jIjTNmvqeMSH9CzVezNxk/fv7KEfsVgai1nXAYVzIZTr0Hk2EoWIsWLYSniC0hZ2VCTILnbmM1UQwdJPyPqSO9feIauMRuYE2VeOkRwspygVQIOsUgG6jrMR175FIZdVt25R8MyIJSBD3I8yAAAd1KUhYoxyh9ftyb9LbK1i1Ba7J+w=='}
+2022-03-06 23:01:55,941 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-03-06 23:02:11,021 DEBUG transport.py Транспорт завершает работу.
+2022-03-06 23:02:11,679 DEBUG transport.py Потеряно соединение с сервером.
+2022-03-06 23:03:03,895 DEBUG client.py Args loaded
+2022-03-06 23:03:22,487 DEBUG client.py Using USERNAME = test2, PASSWD = 123456.
+2022-03-06 23:03:22,487 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-03-06 23:03:22,730 DEBUG client.py Keys successfully loaded.
+2022-03-06 23:03:22,827 INFO transport.py Попытка подключения №1
+2022-03-06 23:03:22,828 DEBUG transport.py Connection established.
+2022-03-06 23:03:22,829 DEBUG transport.py Starting auth dialog.
+2022-03-06 23:03:22,850 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2022-03-06 23:03:22,852 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646597002.8521287, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtrfkZ/5Xtj72x44QP9b5\neTenYYlSJkkb6X+jL4pqATUwGcvvcxBDtRrR0j1VZzhdlUvetoA3MvecULu3jTvg\nRhcrRHQRIzgMSjNV9ZGFBqhZvQmwGJEDI72dAjLyb1e5t1fT45o2DRfA+Zgxt+N0\ntTIgV7xIQiJrkGkaTje1oXqa9a1MH3o2bMLyrnfv2FE3SKdEQK5GUy+ec0P42QUx\njQ4GG2tEVYHJHS8tiQ+Rwz2Qcubs2YeqmLiUP6ZNdRLEZxn4YN0YNsTPEYzre2qo\n/nAAuWSixjOzt8OQQoSlOjL+VcDZBTitNSmnCMtjcVeTj36J5jUsc3onQofaWf1M\npQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 23:03:23,391 DEBUG transport.py Server response = {'response': 511, 'bin': '7b7838743e1ebc2ab653ffcb556f92480638e2f56cac5a7abf1548e88e9b12a856bb783335306fa23a3527908d50c38c0875a8c13441683be9b3f9b212604b0e'}.
+2022-03-06 23:03:23,393 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 23:03:23,393 DEBUG transport.py Запрос списка известных пользователей test2
+2022-03-06 23:03:24,028 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 23:03:24,029 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646597004.029423, 'user': 'test2'}
+2022-03-06 23:03:24,468 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-06 23:03:24,469 DEBUG client.py Transport ready.
+2022-03-06 23:03:24,552 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 23:03:40,108 DEBUG transport.py Создание контакта test3
+2022-03-06 23:03:40,279 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 23:03:40,311 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001F27FE898B0>
+2022-03-06 23:03:48,534 DEBUG transport.py Создание контакта test1
+2022-03-06 23:03:48,977 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 23:03:48,996 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001F27FEE6160>
+2022-03-06 23:03:57,973 DEBUG transport.py Создание контакта user2
+2022-03-06 23:03:58,251 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 23:03:58,270 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x000001F27FEE6280>
+2022-03-06 23:04:05,462 DEBUG transport.py Запрос публичного ключа для test3
+2022-03-06 23:04:05,902 DEBUG main_window.py Загружен открытый ключ для test3
+2022-03-06 23:04:10,838 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test3', 'time': 1646597050.837587, 'mess_text': 'GvSAb46srBLJCiR/SQ+ZX5RdEPRbiCccw+uIcLZZjp3IjcObR+RqYKPPuf79cbQzVcFHrdbuMGavecIO+kSRDcXig8QKbMYsJn9prmLlV9klMjyoiePaSU5yqj9C7B/Lr45qYUbo8RvAtB2JMI7MbJcBhrgsNfEAJDltXlBfkYQKLwSlaS+X6F9Vv7swt8a4YpJ+ZQ0s6eZqYy0Ysy8iDgZN9NhtdOiDptvCE4IMaCjoDNNwT1au1eVZmYTHhLA9JkLCHN5RYS8SMxBMb8Yt68AUHQjmpRIy6ogdyqV4JGB0U9Pm2+WyN6tlBHb4txwFGXxYe2eBcpLPss/K5ry38Q=='}
+2022-03-06 23:04:11,042 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-03-06 23:04:19,785 DEBUG transport.py Запрос публичного ключа для test1
+2022-03-06 23:04:20,206 DEBUG main_window.py Загружен открытый ключ для test1
+2022-03-06 23:04:25,990 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1646597065.9904478, 'mess_text': 'PwYXrB6YDEffEecAlWKdPiYJlwrGKIewMiPzWRi5MVTOaFTik+ZZP47Htm0R8VdR7u4vcvUCgEIsKQD8nRn+M9dB5NKX73FqBgNIII1rX6/OTsKB2dcWLyODERRs1/CbnrrDR7XOo7DHOghcCcrr2zuaIstnoMQb66dLuEf3TXtAEqabV7sxvc8WJ2shI2r0gDpln83zGK/VmW5MIiqTSsgDBwDK95g2tGgbB0VN73BU093vmmYNev0vjlwSLDzNhof+ZEj3XNYwxJvTRXwNYHL7ebxwnwesZAks96zyv0S8iFB5mpdOAiAtqVBxm6gwI3whVSW+PbAHxY56xFY/GA=='}
+2022-03-06 23:04:26,309 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-03-06 23:04:53,645 CRITICAL transport.py Потеряно соединение с сервером.
+2022-03-06 23:04:55,755 DEBUG transport.py Транспорт завершает работу.
+2022-03-06 23:51:07,269 DEBUG client.py Args loaded
+2022-03-06 23:51:26,845 DEBUG client.py Using USERNAME = test1, PASSWD = 123456.
+2022-03-06 23:51:26,845 INFO client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-03-06 23:51:27,088 DEBUG client.py Keys successfully loaded.
+2022-03-06 23:51:27,175 INFO transport.py Попытка подключения №1
+2022-03-06 23:51:27,176 DEBUG transport.py Connection established.
+2022-03-06 23:51:27,177 DEBUG transport.py Starting auth dialog.
+2022-03-06 23:51:27,216 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2022-03-06 23:51:27,218 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1646599887.2176778, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmKN/CFSxgU8eu0oO0oKw\n29WTZQSfqw/mJgEtr8nLUAOHGcg3kT7epUgPfwbo/V67sJlGhb/UD7dPK81utWRn\nFKhhUGuo+ad/4HnvbSQjIHy2Wbr85T4gJCL1IqTkodAgSOo4Nuv/Qq9r5po0dNIC\nF4YTZrzfCy6V0v349iXM2CXf+/14fHCxsm3OkNCUwHsOW6nzh5fIyAs1UhssJm/Z\nbCNzX5PkRjI7bwBJhoXHNgS1fDyII6vGrQAyAwxU0hKrBAtAzYIon5ZlIYxyF2/5\nKb8IVmLmnrvCpmtjTQ4u80Dp6YuErMCD82GzgUi50UdQoW617AmFxaKpvO7Lu+aA\nfwIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-06 23:51:27,729 DEBUG transport.py Server response = {'response': 511, 'bin': '5142652ac8ab9bacad26a75fb723392913fc2ae3e8e720e4e3121c81e2550ac0b55657709510a26c2d7bd2967d20aa84be59ac77cdb7c3b6fd4c39cf234173c7'}.
+2022-03-06 23:51:27,730 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-06 23:51:27,730 DEBUG transport.py Запрос списка известных пользователей test1
+2022-03-06 23:51:28,345 DEBUG transport.py Запрос контакт листа для пользователся Thread-6
+2022-03-06 23:51:28,345 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1646599888.3451362, 'user': 'test1'}
+2022-03-06 23:51:28,796 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2', 'test3', 'user1']}
+2022-03-06 23:51:28,902 DEBUG client.py Transport ready.
+2022-03-06 23:51:29,018 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-06 23:51:35,315 DEBUG transport.py Запрос публичного ключа для user1
+2022-03-06 23:51:35,424 DEBUG main_window.py Загружен открытый ключ для user1
+2022-03-06 23:52:59,442 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'user1', 'time': 1646599979.4421773, 'mess_text': 'Zuw4OQmItxLVnoaYA12cdz1I/xxbU/7QbAjy4GMPLY62WrEhftzv32E+gFyVvUkt9fZXqTHkoNjv1brxRXwMhT6O87kwlQ0VuOJwbhebDFeZAscsOBMzCBVuocvG5wwKn630gNwa+woxTTotg8M5CGeyW9xhHYXuOu9Z6Bq53p6ceQH4nU5sN/980BNHtoep8GzXDFxG7mCbMbR+a1gj2TFxyLvNLDMGppajb6zw8o0Mfp8Y+GpxcResRyvWhsZYEhc7dmIxNmWSD/bC7amENC4/+j+uBNyNkvBb1ppToJQKHaPIhZuM3hO2+rwFh9fXmyBlaOVeZRcp/Ll6A9cPrg=='}
+2022-03-06 23:52:59,707 DEBUG transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-03-06 23:53:03,716 DEBUG transport.py Транспорт завершает работу.
+2022-03-06 23:53:04,263 DEBUG transport.py Потеряно соединение с сервером.
