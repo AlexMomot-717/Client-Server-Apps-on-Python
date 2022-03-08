@@ -1,10 +1,11 @@
 import sys
 import socket
+import logging
 import log.server_config_log
 import log.client_config_log
-import logging
-sys.path.append('../')
 
+
+sys.path.append('../')
 
 # метод определения модуля, источника запуска.
 if sys.argv[0].find('client_dist') == -1:

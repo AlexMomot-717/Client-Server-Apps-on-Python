@@ -61,5 +61,3 @@ RESPONSE_511 = {
     RESPONSE: 511,
     DATA: None
 }
-
-

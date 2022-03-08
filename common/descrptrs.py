@@ -1,5 +1,6 @@
-import logging
 import sys
+import logging
+
 
 # Инициализиция логера
 # метод определения модуля, источника запуска.
@@ -9,7 +10,6 @@ if sys.argv[0].find('client_dist') == -1:
 else:
     # ну, раз не сервер, то клиент
     logger = logging.getLogger('client_dist')
-
 
 
 # Дескриптор для описания порта:

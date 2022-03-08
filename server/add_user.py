@@ -1,7 +1,8 @@
-from PyQt5.QtWidgets import QDialog, QPushButton, QLineEdit, QApplication, QLabel, QMessageBox
-from PyQt5.QtCore import Qt
-import hashlib
 import binascii
+import hashlib
+
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QDialog, QPushButton, QLineEdit, QApplication, QLabel, QMessageBox
 
 
 class RegisterUser(QDialog):
@@ -91,8 +92,10 @@ class RegisterUser(QDialog):
 if __name__ == '__main__':
     app = QApplication([])
     from database import ServerStorage
+
     database = ServerStorage('../server_database.db3')
     from core import MessageProcessor
+
     server = MessageProcessor('127.0.0.1', 7777, database)
     dial = RegisterUser(database, server)
     app.exec_()
